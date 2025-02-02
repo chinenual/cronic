@@ -1,5 +1,10 @@
 See http://habilis.net/cronic/
 
+A fork of the original v3 cronic that adds an option, --always, to 
+generate email even on successful runs.  Benefits from cronic's formatting
+of the result code, stderr/stdout output in cases where you want an email
+even on successful execution.
+
 # Cronic
 
 ## A cure for Cron's chronic email problem
