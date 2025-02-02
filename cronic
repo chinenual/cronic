@@ -12,14 +12,14 @@ ERR=$TMP/cronic.err
 TRACE=$TMP/cronic.trace
 
 ALWAYS=0
-if [ $1 = "--always" ]
+if [ "$1" = "--always" ]
 then
     ALWAYS=1
     shift
 fi
 
 set +e
-"$@" >$OUT 2>$TRACE
+eval "$@" >$OUT 2>$TRACE
 RESULT=$?
 set -e
 
