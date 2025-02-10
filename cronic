@@ -22,7 +22,7 @@ then
 fi
 
 set +e
-eval "$@" >$OUT 2>$TRACE
+"$@" >$OUT 2>$TRACE
 RESULT=$?
 set -e
 
